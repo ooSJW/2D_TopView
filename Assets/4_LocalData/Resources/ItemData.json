@@ -1,0 +1,14 @@
+{
+	"array":[
+		{"index":"0", "itemType":"Weapon", "lootType":"Select", "itemName":"Stone", "uiName":"돌 검", "itemDescription":"플레이어 주변을 돌며 적을 공격합니다.", "itemIcon":"StoneIcon", "iconPath":"ItemIcon/", "itemValue":0, "maxLevel":4, "itemLevelText":"현재 레벨 : @Level\n최대 레벨 : @MaxLevel"},
+		{"index":"1", "itemType":"Weapon", "lootType":"Select", "itemName":"Dagger", "uiName":"표창", "itemDescription":"가장 가까운 적을 공격하는 원거리 무기입니다.", "itemIcon":"DaggerIcon", "iconPath":"ItemIcon/", "itemValue":0, "maxLevel":4, "itemLevelText":"현재 레벨 : @Level\n최대 레벨 : @MaxLevel"},
+		{"index":"2", "itemType":"Shoes", "lootType":"Select", "itemName":"Shoes", "uiName":"신발", "itemDescription":"플레이어의 이동속도가 @itemValue%증가합니다.", "itemIcon":"ShoesIcon", "iconPath":"ItemIcon/", "itemValue":0.15, "maxLevel":5, "itemLevelText":"현재 레벨 : @Level\n최대 레벨 : @MaxLevel"},
+		{"index":"3", "itemType":"Armor", "lootType":"Select", "itemName":"Armor", "uiName":"갑옷", "itemDescription":"플레이어의 MaxHp가 @itemValue%증가합니다.", "itemIcon":"ArmorIcon", "iconPath":"ItemIcon/", "itemValue":0.15, "maxLevel":5, "itemLevelText":"현재 레벨 : @Level\n최대 레벨 : @MaxLevel"},
+		{"index":"4", "itemType":"Glove", "lootType":"Select", "itemName":"Glove", "uiName":"장갑", "itemDescription":"플레이어의 모든 공격력이 @itemValue%증가합니다.", "itemIcon":"GloveIcon", "iconPath":"ItemIcon/", "itemValue":0.1, "maxLevel":5, "itemLevelText":"현재 레벨 : @Level\n최대 레벨 : @MaxLevel"},
+		{"index":"5", "itemType":"Potion", "lootType":"Drop", "itemName":"Potion", "uiName":"", "itemDescription":"", "itemIcon":"", "iconPath":"", "itemValue":25, "maxLevel":0, "itemLevelText":""},
+		{"index":"6", "itemType":"Magnet", "lootType":"Drop", "itemName":"Magnet", "uiName":"", "itemDescription":"", "itemIcon":"", "iconPath":"", "itemValue":0, "maxLevel":0, "itemLevelText":""},
+		{"index":"7", "itemType":"Exp", "lootType":"Drop", "itemName":"Exp0", "uiName":"", "itemDescription":"", "itemIcon":"", "iconPath":"", "itemValue":7, "maxLevel":0, "itemLevelText":""},
+		{"index":"8", "itemType":"Exp", "lootType":"Drop", "itemName":"Exp1", "uiName":"", "itemDescription":"", "itemIcon":"", "iconPath":"", "itemValue":10, "maxLevel":0, "itemLevelText":""},
+		{"index":"9", "itemType":"Exp", "lootType":"Drop", "itemName":"Exp2", "uiName":"", "itemDescription":"", "itemIcon":"", "iconPath":"", "itemValue":15, "maxLevel":0, "itemLevelText":""}
+	]
+}

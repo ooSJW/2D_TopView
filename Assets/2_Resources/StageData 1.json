@@ -1,0 +1,11 @@
+{
+	"array":[
+		{"index":"0", "stageLevel":0, "spawnEnemy":["Enemy01"], "spawnPercent":[1], "spawnTime":1, "gameTime":2},
+		{"index":"", "stageLevel":1, "spawnEnemy":["Enemy01","Enemy02"], "spawnPercent":[0.5,1], "spawnTime":0.9, "gameTime":5},
+		{"index":"", "stageLevel":2, "spawnEnemy":["Enemy01","Enemy02"], "spawnPercent":[0.3,1], "spawnTime":0.8, "gameTime":8},
+		{"index":"", "stageLevel":3, "spawnEnemy":["Enemy01","Enemy02","Enemy03"], "spawnPercent":[0.1,0.5,1], "spawnTime":0.7, "gameTime":10},
+		{"index":"", "stageLevel":4, "spawnEnemy":["Enemy01","Enemy02","Enemy03"], "spawnPercent":[0.1,0.3,1], "spawnTime":0.6, "gameTime":12},
+		{"index":"", "stageLevel":5, "spawnEnemy":["Enemy01","Enemy02","Enemy03","Enemy04"], "spawnPercent":[0.1,0.2,0.5,1], "spawnTime":0.5, "gameTime":15},
+		{"index":"", "stageLevel":6, "spawnEnemy":["Enemy01","Enemy02","Enemy03","Enemy04","Enemy05"], "spawnPercent":[0.1,0.2,0.3,0.5,1], "spawnTime":0.4, "gameTime":18}
+	]
+}

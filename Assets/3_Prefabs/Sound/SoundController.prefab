@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6223440170383127618
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6223440170383127644}
+  - component: {fileID: 6223440170383127645}
+  - component: {fileID: 6223440170383127646}
+  - component: {fileID: 6223440170383127647}
+  m_Layer: 0
+  m_Name: SoundController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6223440170383127644
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223440170383127618}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6223440170383127645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223440170383127618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a78f2a1aec8d44f94c723a348347d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <BackgroundMusic>k__BackingField: {fileID: 6223440170383127646}
+  <SoundEffect>k__BackingField: {fileID: 6223440170383127647}
+--- !u!114 &6223440170383127646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223440170383127618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 010c27aa6fbc96e40b4e4d700c80758c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backGroundMusic: {fileID: 8300000, guid: a3a9aa148230e944389cc13e5435814a, type: 3}
+  onOffButton: {fileID: 0}
+  onImage: {fileID: 21300000, guid: 513ef677c5246744083f3a121d31e3f2, type: 3}
+  offImage: {fileID: 21300000, guid: b018c08d68b6ffa4e99eb822a6338f2f, type: 3}
+--- !u!114 &6223440170383127647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6223440170383127618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72723d0e4aa36274881ee9414a039215, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sfxClips:
+  - {fileID: 8300000, guid: eea6475a9b119e444b6ceb81f4d56b3e, type: 3}
+  - {fileID: 8300000, guid: c0f0094687b9a4d41be524d8d5982520, type: 3}
+  - {fileID: 8300000, guid: c5f499405ed7a1e4f87057f620ddd4ff, type: 3}
+  - {fileID: 8300000, guid: 01343d1a1286f3948acf9872b158696c, type: 3}
+  - {fileID: 8300000, guid: 5a1d853ad91ce9a40a03a62e54c95d4e, type: 3}
+  - {fileID: 8300000, guid: 462747f14324a7a47b993e854cabf0bc, type: 3}
+  - {fileID: 8300000, guid: 8aa3b2282d42f5b4e990960ae1650f09, type: 3}
+  - {fileID: 8300000, guid: d67aef8a0bc97654e90848e0ddb1cec2, type: 3}
+  - {fileID: 8300000, guid: 6e33b83eb22d03e40b58c8f94b776473, type: 3}
+  - {fileID: 8300000, guid: a03170777c84bea458000194e71857bb, type: 3}
+  onOffButton: {fileID: 0}
+  onImage: {fileID: 21300000, guid: 513ef677c5246744083f3a121d31e3f2, type: 3}
+  offImage: {fileID: 21300000, guid: b018c08d68b6ffa4e99eb822a6338f2f, type: 3}

@@ -1,0 +1,6 @@
+{
+	"array":[
+		{"index":"0", "prefabName":"Stone", "weaponType":"Rotate", "damage":[0,6,8,10,12], "count":[0,1,2,3,5], "attackDelay":[0,0,0,0,0], "bounceCount":[0,0,0,0,0], "speed":200, "position":3.5, "maxLevel":4},
+		{"index":"1", "prefabName":"Dagger", "weaponType":"Projectile", "damage":[0,3,5,7,10], "count":[1,1,1,1,1], "attackDelay":[0,1,0.8,0.5,0.3], "bounceCount":[0,0,1,2,3], "speed":20, "position":0, "maxLevel":4}
+	]
+}

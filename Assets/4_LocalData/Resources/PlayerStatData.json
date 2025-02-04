@@ -1,0 +1,6 @@
+{
+	"array":[
+		{"index":"0", "name":"Knight", "maxHp":100, "attackPower":10, "moveSpeed":3.5, "level":1, "criticalPercent":0.3, "criticalIncreasePercent":0.5, "maxExp":14, "maxExpIncreasePercent":0.2, "iconPath":"CharacterIcon/KnightIcon", "characterDescription":"최대 생명력 : 높음\n이동속도 : 보통\n공격력 : 보통", "cost":0},
+		{"index":"1", "name":"Ethan", "maxHp":65, "attackPower":14, "moveSpeed":4.5, "level":1, "criticalPercent":0.4, "criticalIncreasePercent":0.5, "maxExp":14, "maxExpIncreasePercent":0.2, "iconPath":"CharacterIcon/EthanIcon", "characterDescription":"최대 생명력 : 낮음\n이동속도 : 뛰어남\n공격력 : 뛰어남", "cost":300}
+	]
+}
