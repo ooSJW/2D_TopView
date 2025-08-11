@@ -89,12 +89,13 @@ namespace project02
         }
         public string SaveLoadSelecteCharacter(PlayerName? playerNameValue = null)
         {
-            if (playerNameValue != null)
+            if (playerNameValue is not null)
             {
                 PlayerPrefs.SetString("SelectedCharacter", playerNameValue.ToString());
                 PlayerPrefs.Save();
-                return string.Empty;
+                return playerNameValue.ToString();
             }
+            // 초기 실행 예외처리
             return PlayerPrefs.GetString("SelectedCharacter", PlayerName.Knight.ToString());
         }
 

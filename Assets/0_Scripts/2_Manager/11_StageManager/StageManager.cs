@@ -30,7 +30,7 @@ public partial class StageManager : MonoBehaviour // Sign
         Spawner = spawnerValue;
         Spawner.Initialize();
     }
-    public void SigndownSpawner()
+    public void SignOutSpawner()
     {
         Spawner = null;
     }

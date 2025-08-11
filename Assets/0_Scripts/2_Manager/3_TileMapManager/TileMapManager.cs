@@ -38,7 +38,7 @@ namespace project02
             for (int i = 0; i < TileMaps.Length; i++)
                 TileMaps[i].Initialize();
         }
-        public void SignDownTileMap()
+        public void SignOutTileMap()
         {
             TileMaps = null;
         }

@@ -36,7 +36,7 @@ namespace project02
             WeaponController= weaponController;
             WeaponController.Initialize();
         }
-        public void SignDownWeaponController()
+        public void SignOutWeaponController()
         {
             WeaponController = null;
         }

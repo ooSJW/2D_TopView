@@ -29,7 +29,7 @@ public partial class ItemManager : MonoBehaviour // Sign
 		ItemController = itemControllerValue;
 		ItemController.Initialize();
 	}
-	public void SignDownItgemController()
+	public void SignOutItgemController()
 	{
 		ItemController = null;
 	}

@@ -36,7 +36,7 @@ namespace project02
     {
         public void Progress()
         {
-            if (player.CanMove)
+            if (player.Moveable)
             {
                 GetInputValue();
                 if (player.InputVector.magnitude == 0)

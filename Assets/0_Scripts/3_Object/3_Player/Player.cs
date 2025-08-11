@@ -218,7 +218,7 @@ namespace project02
         }
 
         private bool canMove;
-        public bool CanMove { get => canMove; set => canMove = value; }
+        public bool Moveable { get => canMove; set => canMove = value; }
 
         public PlayerName PlayerName { get; private set; }
 
@@ -227,9 +227,9 @@ namespace project02
     {
         private void Allocate()
         {
+            // 객체 생성시 생성되는 객체에서 캐릭터에 알맞게 초기화 하도록 구현.ㄴ
             hitEnemyList = new List<CombatObjectBase>();
             PlayerName = Enum.Parse<PlayerName>(name);
-            int index = (int)PlayerName;
             SignUpPlayerUI();
             PlayerStatInformation = MainSystem.Instance.DataManager.PlayerStatData.GetData(PlayerName);
         }
@@ -249,7 +249,7 @@ namespace project02
         {
             PlayerJoystickInput = MainSystem.Instance.PoolManager.Spawn("PlayerJoystick", null, default, true).GetComponent<PlayerJoystickInput>();
             PlayerJoystickInput.Initialize(this);
-            CanMove = true;
+            Moveable = true;
             playerCollider.enabled = true;
         }
     }

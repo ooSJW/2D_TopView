@@ -96,11 +96,7 @@ public partial class SelectItem : ItemBase // ButtonEvent
     private void ButtonClick()
     {
         Level++;
-
-        List<SelectItem> itemList = MainSystem.Instance.ItemManager.ItemController.ValidSelectItemList;
-        if (Level > 0 && !itemList.Contains(this))
-            itemList.Add(this);
-
+        MainSystem.Instance.ItemManager.ItemController.RegisterItem(this);
         MainSystem.Instance.UIManager.UIContoller.LevelUpUI.CloseLevelUpUI();
     }
 }

@@ -54,7 +54,7 @@ public partial class UIManager : MonoBehaviour // Sign
         UIContoller = UIContollerValue;
         UIContoller.Initialize();
     }
-    public void SignDownUIController()
+    public void SignOutUIController()
     {
         UIContoller = null;
     }

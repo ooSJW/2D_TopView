@@ -30,7 +30,7 @@ public partial class SoundManager : MonoBehaviour // Sign
 		SoundController = soundControllerValue;
 		SoundController.Initialize();
 	}
-	public void SignDownSoundController()
+	public void SignOutSoundController()
 	{
 		SoundController = null;
 	}

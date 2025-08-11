@@ -36,7 +36,7 @@ namespace project02
             enemy.Initialize();
             AllFieldEnemyList.Add(enemy);
         }
-        public void SignDownEnemy(Enemy enemy)
+        public void SignOutEnemy(Enemy enemy)
         {
             AllFieldEnemyList.Remove(enemy);
         }

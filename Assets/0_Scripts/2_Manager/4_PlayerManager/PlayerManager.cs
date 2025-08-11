@@ -21,6 +21,7 @@ namespace project02
             {
                 if (playerName != value)
                 {
+                    // 게임 진행 중 캐릭터가 바뀌었을 때 이름 저장
                     playerName = value;
                     MainSystem.Instance.DataManager.SaveLoadSelecteCharacter(playerName);
                 }
@@ -40,6 +41,8 @@ namespace project02
         }
         private void Setup()
         {
+            // 게임 시작 후 매니저 클래스 초기화 시 저장된 정보 받아오기
+            // 게임 진행 중 캐릭터가 바뀐 경우 프로퍼티로 처리
             playerName = Enum.Parse<PlayerName>(MainSystem.Instance.DataManager.SaveLoadSelecteCharacter());
         }
     }
@@ -54,7 +57,7 @@ namespace project02
             Player = playerValue;
             Player.Initialize();
         }
-        public void SignDownPlayer()
+        public void SignOutPlayer()
         {
             Player = null;
         }

@@ -27,6 +27,8 @@ public partial class StageScene : BaseScene // Initialize
         MainSystem.Instance.ItemManager.SignUpItemController(ItemController);
         MainSystem.Instance.UIManager.SignUpUIController(UIContoller);
 
+        // 씬 전환 마다 한 번 호출되는 초기화 구문
+        // 저장된 캐릭터 이름에 맞는 오브젝트를 찾아 생성.
         PlayerName playerName = MainSystem.Instance.PlayerManager.PlayerName;
         Player = MainSystem.Instance.PoolManager.Spawn(playerName.ToString()).GetComponent<Player>();
         MainSystem.Instance.PlayerManager.SignUpPlayer(Player);

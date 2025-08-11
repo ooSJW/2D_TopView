@@ -58,7 +58,7 @@ namespace project02
             WeaponRoot = weaponRoot;
             WeaponRoot.Initialize();
         }
-        public void SignDownWeaponRoot()
+        public void SignOutWeaponRoot()
         {
             WeaponRoot = null;
         }
@@ -67,7 +67,7 @@ namespace project02
             weapon.Initialize(prefabName);
             WeaponList.Add(weapon);
         }
-        public void SignDownWeapon(Weapon weapon)
+        public void SignOutWeapon(Weapon weapon)
         {
             WeaponList.Remove(weapon);
         }

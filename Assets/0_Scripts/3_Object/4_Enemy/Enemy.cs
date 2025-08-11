@@ -141,7 +141,7 @@ namespace project02
         {
             enemyCollider.enabled = false;
             MainSystem.Instance.PlayerManager.Player.KillCount++;
-            MainSystem.Instance.EnemyManager.SignDownEnemy(this);
+            MainSystem.Instance.EnemyManager.SignOutEnemy(this);
 
             SpawnItem();
             MainSystem.Instance.GameManager.GameController.GoldFromThisRaid += EnemyStatInformation.dropGold;

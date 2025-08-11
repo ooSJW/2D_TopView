@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering.Universal.Internal;
+using static Cinemachine.DocumentationSortingAttribute;
 
 public partial class ItemController : MonoBehaviour // Data Field
 {
@@ -41,6 +42,12 @@ public partial class ItemController : MonoBehaviour // Property
     {
         allFieldItems.Remove(dropItem);
         MainSystem.Instance.PoolManager.Despawn(dropItem.gameObject);
+    }
+
+    public void RegisterItem(SelectItem item)
+    {
+        if (item.Level > 0 && !ValidSelectItemList.Contains(item))
+            ValidSelectItemList.Add(item);
     }
 
     public void Magnet()

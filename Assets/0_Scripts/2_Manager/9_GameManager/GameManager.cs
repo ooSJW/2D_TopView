@@ -46,7 +46,7 @@ public partial class GameManager : MonoBehaviour // Sign
         GameController = gameController;
         GameController.Initialize();
     }
-    public void SignDownGameController()
+    public void SignOutGameController()
     {
         GameController = null;
     }

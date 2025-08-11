@@ -31,11 +31,11 @@ public partial class PauseUI : MonoBehaviour // Property
     public void ReFreshPauseUI()
     {
         List<SelectItem> itemList = MainSystem.Instance.ItemManager.ItemController.ValidSelectItemList;
-        if (itemList != null && itemList.Count > 0)
+        if (itemList is not null && itemList.Count > 0)
         {
             for (int i = 0; i < itemList.Count; i++)
             {
-                if (itemInformationSlotList[i] != null)
+                if (itemInformationSlotList[i] is not null)
                 {
                     SelectItem item = itemList[i];
                     itemInformationSlotList[i].SetItemInformation(item);

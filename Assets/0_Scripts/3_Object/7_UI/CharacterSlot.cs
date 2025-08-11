@@ -11,7 +11,7 @@ using static project02.StageData;
 public partial class CharacterSlot : MonoBehaviour // Data Field
 {
     public PlayerStatInformation playerStatInformation;
-    private PlayerName playerName;
+    private PlayerName playerCharacterName;
 
     [SerializeField] private Button selectButton;
     [SerializeField] private Image characterImage;
@@ -24,7 +24,7 @@ public partial class CharacterSlot : MonoBehaviour // Initialize
 {
     private void Allocate()
     {
-        playerName = Enum.Parse<PlayerName>(playerStatInformation.name);
+        playerCharacterName = Enum.Parse<PlayerName>(playerStatInformation.name);
 
         characterImage.sprite = Resources.Load<Sprite>(playerStatInformation.iconPath);
         characterName.text = playerStatInformation.name;
@@ -34,6 +34,7 @@ public partial class CharacterSlot : MonoBehaviour // Initialize
     }
     public void Initialize(PlayerStatInformation playerStatInformationValue)
     {
+        // 빈 슬롯 UI를 풀링 후 생성 시 캐릭터 정보를 받은 후 IconPath, 이름, 설명 등의 정보를 바탕으로 슬롯UI 생성 
         playerStatInformation = playerStatInformationValue;
         Allocate();
         Setup();
@@ -56,7 +57,7 @@ public partial class CharacterSlot : MonoBehaviour // Property
         selectButton.onClick.RemoveListener(UnrockCharacter);
 
 
-        switch (playerName)
+        switch (playerCharacterName)
         {
             // basicCharacter
             case PlayerName.Knight:
@@ -66,7 +67,7 @@ public partial class CharacterSlot : MonoBehaviour // Property
 
             // unrock character
             default:
-                bool isUnrock = MainSystem.Instance.DataManager.IsCharacterUnrock(playerName);
+                bool isUnrock = MainSystem.Instance.DataManager.IsCharacterUnrock(playerCharacterName);
                 if (isUnrock)
                 {
                     selectButton.onClick.AddListener(SelectCharacter);
@@ -86,7 +87,7 @@ public partial class CharacterSlot : MonoBehaviour // Property
     }
     public void SelectCharacter()
     {
-        MainSystem.Instance.PlayerManager.SignUpPlayerName(playerName);
+        MainSystem.Instance.PlayerManager.SignUpPlayerName(playerCharacterName);
         MainSystem.Instance.UIManager.UIContoller.OnOffCharacterSelectUI();
         MainSystem.Instance.UIManager.UIContoller.LobbyUI.SetCurrentCharacterInfo();
     }

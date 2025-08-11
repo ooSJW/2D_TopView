@@ -15,7 +15,7 @@ public partial class GameController : MonoBehaviour // Data Field
             UIContoller controller = MainSystem.Instance.UIManager.UIContoller;
             if (controller)
                 controller.IsPause = isPause;
-            MainSystem.Instance.PlayerManager.Player.CanMove = !IsPause;
+            MainSystem.Instance.PlayerManager.Player.Moveable = !IsPause;
         }
     }
 
